@@ -55,7 +55,7 @@ reqMatchPort.click()
 print("Request New Port")
 time.sleep(5)
 
-port = browser.find_element("xpath", '//*[@id="epf-port-info"]/span[1]')
+port = browser.find_element("xpath", '//div[@id="epf-port-info"]//span[1]')
 
         
 print("New Port: " + port.text)
